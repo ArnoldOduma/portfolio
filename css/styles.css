@@ -2,8 +2,9 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background: red;
-  scroll-behavior: smooth;
+  background-image: url('../images/back-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   
 }
 #test-1, #test-2{
