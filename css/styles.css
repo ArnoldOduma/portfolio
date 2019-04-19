@@ -1,10 +1,63 @@
 html{
   scroll-behavior: smooth;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
 body{
   background-image: url('../images/back-1.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: all 1s ease-in-out;
   
 }
+.nav-bar{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  
+}
+.nav-bar ul li{
+  display: inline-block;
+  border-radius: 30px;
+}
+.nav-bar ul li a{
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  
+}
+.nav-bar ul li:nth-child(2){
+  border: 2px solid rgb(255, 255, 255);
+}
+.nav-bar ul li:hover{
+  background: rgb(255, 0, 98);
+  border-color: black;
+}
+
+.sec-1{
+  margin-top: 25vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sec-1 img{
+  /* background: green; */
+  width: 300px;
+}
+.sec-1 div{
+  padding: 60px;
+  text-align: center;
+}
+.sec-1 button{
+  width: 20%;
+}
+
+
+
 
