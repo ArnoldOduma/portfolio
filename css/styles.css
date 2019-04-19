@@ -1,26 +1,62 @@
+@import url('../fonts/NewsCycle-Bold.ttf');
+@import url('https://fonts.googleapis.com/css?family=Khand');
+@font-face {
+  font-family: 'NewsCycle';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/NewsCycle-Bold.ttf');
+}
+@font-face {
+  font-family: 'Black-ops';
+  src: url('../fonts/BlackOpsOne-Regular.ttf');
+}
+@font-face{
+  font-family: 'Krona One';
+  src: url('../fonts/KronaOne-Regular.ttf');
+}
+
+
 html{
   scroll-behavior: smooth;
 }
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
 }
 a{
   text-decoration: none;
 }
+.h-3{
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-family: 'Krona One';
+  margin: 30px 0;
+}
+li{
+  list-style-type: none;
+}
+
 body{
   background-image: url('../images/back-1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   transition: all 1s ease-in-out;
+  color: white;
+  font-family: 'Khand', sans-serif;
+  
   
 }
 .nav-bar{
   position: absolute;
   top: 10%;
-  right: 10%;
-  
+  right: 5%;
+  font-family: 'Krona One';
 }
 .nav-bar ul li{
   display: inline-block;
@@ -36,8 +72,7 @@ body{
   border: 2px solid rgb(255, 255, 255);
 }
 .nav-bar ul li:hover{
-  background: rgb(255, 0, 98);
-  border-color: black;
+  background: rgb(0, 0, 0);
 }
 
 .sec-1{
@@ -53,11 +88,70 @@ body{
 .sec-1 div{
   padding: 60px;
   text-align: center;
+  font-family: 'Khand', sans-serif;
+  font-size: 30px;
+  text-shadow: 0 0 20px black;
 }
 .sec-1 button{
-  width: 20%;
+  padding: 15px 20px;
+  background: none;
+  border: 2px solid white;
+  font-family: 'Krona One';
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  margin-top: 40px;
+  
+}
+.sec-1 button:hover{
+  background: black;
 }
 
+.sec-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0;
+  /* height: 100px; */
+
+}
+.sec-2 div{
+  width: 28%;
+  min-width: 200px;
+  background: rgba(0, 0, 0, 0.952);
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0 10px;
+  border-radius: 20px 0 20px 0;
+}
+.sec-2 div p{
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 2px solid white;
+  padding: 5px 2px 3px 2px;
+  margin: 5px 0;
+  border-radius: 15px 0 15px 0;
+}
+
+.sec-3{
+  /* background: rgb(0, 102, 255); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0;
+  /* height: 100px; */
+
+}
+.sec-3 div{
+  width: 28%;
+  /* background: yellow; */
+  padding: 10px;
+  text-align: center;
+  margin: 0 10px;
+}
 
 
 
