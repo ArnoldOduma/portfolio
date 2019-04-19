@@ -1,3 +1,16 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   background: red;
+  scroll-behavior: smooth;
+  
+}
+#test-1, #test-2{
+  width: 90%;
+  height: 100vh;
+  background: rgb(63, 44, 44);
+}
+#test-2{
+  background: rebeccapurple;
 }
