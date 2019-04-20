@@ -70,6 +70,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: bottom;
   transition: all 1s ease-in-out;
   color: white;
   font-family: 'Khand', sans-serif;
@@ -179,6 +180,9 @@ body{
 /* --------------------------------------- 
                 CONTACTS
  ------------------------------------------ */
+ #contacts-body{
+   background-position: bottom;
+ }
 .contacts-sec-1{
   margin-top: 7vh;
   margin-right: 5%;
@@ -260,7 +264,8 @@ input::placeholder, textarea::placeholder{
 
 @media screen and (max-width: 540px){
   body{
-    background-position-x: 2px;
+    /* background-size: 100%; */
+    background-position: center;
   }
   .nav-bar{
     top: 5vh;
