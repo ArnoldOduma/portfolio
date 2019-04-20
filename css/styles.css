@@ -38,6 +38,18 @@ html{
 }
 a{
   text-decoration: none;
+  background: rgba(0, 0, 0, 0.295);
+  border-radius: 30px;
+  border: 2px solid white;
+  font-family: 'Krona One', sans-serif;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: 0.3s ease-in-out;
+}
+a:hover{
+  background: black;
 }
 .h-3{
   width: 100%;
@@ -72,7 +84,6 @@ body{
 }
 .nav-bar ul li{
   display: inline-block;
-  border-radius: 30px;
 }
 .nav-bar ul li a{
   display: inline-block;
@@ -80,11 +91,8 @@ body{
   color: white;
   
 }
-.nav-bar ul li:nth-child(2){
-  border: 2px solid rgb(255, 255, 255);
-}
-.nav-bar ul li:hover{
-  background: rgb(0, 0, 0);
+.nav-bar ul li:nth-child(1) a{
+  border: none;
 }
 
 .sec-1{
@@ -110,24 +118,14 @@ body{
   letter-spacing: 3px;
 }
 .sec-1 button {
-  
   background: none;
-  border: 2px solid white;
-  font-family: 'Krona One';
-  color: white;
-  font-size: 20px;
-  text-transform: capitalize;
-  border-radius: 30px;
-  margin-top: 40px;
-  
+  border: none;
+  margin-top: 30px 
 }
 .sec-1 button a{
   display: inline-block;
   color: white;
-  padding: 15px 20px;
-}
-.sec-1 button:hover{
-  background: black;
+  padding: 10px 20px;
 }
 
 .sec-2{
@@ -191,15 +189,10 @@ body{
  .contacts-sec-1 a{
   display: inline-block;
   width: 140px;
-  font-family: 'Krona One', sans-serif;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border: 2px solid white;
-  border-radius: 30px;
+  
  }
+
  .contacts-sec-1 a:nth-child(1){
-   background: red;
    border: none;
  }
 .contacts-hd{
@@ -210,7 +203,7 @@ body{
 }
 .form-1{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 500px;
   max-width: 90%;
@@ -231,10 +224,9 @@ body{
 .form-1 label{
   display: inline-block;
   font-size: 20px;
-  margin-top: 30px; 
+  margin-top: 10px; 
 }
 input,textarea{
-  
   outline: none;
   background: none;
   border: 1.5px solid white;
@@ -245,23 +237,22 @@ input,textarea{
   color:rgb(255, 255, 255);
 }
 input::placeholder, textarea::placeholder{
-  color: rgb(243, 223, 223); 
+  color: rgb(218, 218, 218); 
   font-size: 16px;
 }
 .form-1 input, .form-1 textarea{
   width: 100%;
   cursor: pointer;
 }
-.form-1 input:hover{
-  background: rgb(0, 0, 0);
-}
-
 .form-1 input[type=submit]{
-  margin-top: 30px;
+  margin: 20px 0; 
   padding: 10px 25px;
   width: 50%;
   border-radius: 30px;
   font-family: 'Krona One', sans-serif;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 .form-1 input[type=submit]:hover{
   background: black;
