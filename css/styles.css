@@ -183,4 +183,94 @@ body{
 /* --------------------------------------- 
                 CONTACTS
  ------------------------------------------ */
+.contacts-sec-1{
+  margin-top: 10%;
+  margin-right: 5%;
+  text-align: right;
+ }
+ .contacts-sec-1 a{
+  display: inline-block;
+  width: 140px;
+  font-family: 'Krona One', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 30px;
+ }
+ .contacts-sec-1 a:nth-child(1){
+   background: red;
+   border: none;
+ }
+.contacts-hd{
+  margin-top: 10px; 
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+.form-1{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 500px;
+  max-width: 90%;
+  color: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  
+}
+.form-1 div{
+  display: inline-block;
+  text-align: left;
+}
+.text-area{
+  width: 100%;
+}
 
+.form-1 label{
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 30px; 
+}
+input,textarea{
+  
+  outline: none;
+  background: none;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  padding: 7px 5px;
+  /* font-family: 'Khand', sans-serif; */
+  font-size: 18px;
+  color:rgb(255, 255, 255);
+}
+input::placeholder, textarea::placeholder{
+  color: rgb(243, 223, 223); 
+  font-size: 16px;
+}
+.form-1 input, .form-1 textarea{
+  width: 100%;
+  cursor: pointer;
+}
+.form-1 input:hover{
+  background: rgb(0, 0, 0);
+}
+
+.form-1 input[type=submit]{
+  margin-top: 30px;
+  padding: 10px 25px;
+  width: 50%;
+  border-radius: 30px;
+  font-family: 'Krona One', sans-serif;
+}
+.form-1 input[type=submit]:hover{
+  background: black;
+  
+}
+
+@media screen and (max-width: 540px){
+  .form-1 div{
+    width: 100%;
+  }
+
+}
