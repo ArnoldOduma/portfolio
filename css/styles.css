@@ -1,5 +1,5 @@
-@import url('../fonts/NewsCycle-Bold.ttf');
-@import url('https://fonts.googleapis.com/css?family=Khand');
+/* @import url('../fonts/NewsCycle-Bold.ttf'); */
+/* @import url('https://fonts.googleapis.com/css?family=Khand'); */
 @font-face {
   font-family: 'NewsCycle';
   font-style: normal;
@@ -14,6 +14,17 @@
   font-family: 'Krona One';
   src: url('../fonts/KronaOne-Regular.ttf');
 }
+@font-face{
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani-Light.ttf');
+}
+@font-face{
+  font-family: 'Khand';
+  src: url('../fonts/Khand-Regular.ttf');
+}
+
+
+
 
 
 html{
@@ -23,7 +34,7 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.5s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 a{
   text-decoration: none;
@@ -31,6 +42,7 @@ a{
 .h-3{
   width: 100%;
   text-align: center;
+  text-transform: capitalize;
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -92,8 +104,13 @@ body{
   font-size: 30px;
   text-shadow: 0 0 20px black;
 }
-.sec-1 button{
-  padding: 15px 20px;
+.sec-1 div p span{
+  font-family: 'Black-ops';
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+.sec-1 button {
+  
   background: none;
   border: 2px solid white;
   font-family: 'Krona One';
@@ -103,6 +120,11 @@ body{
   border-radius: 30px;
   margin-top: 40px;
   
+}
+.sec-1 button a{
+  display: inline-block;
+  color: white;
+  padding: 15px 20px;
 }
 .sec-1 button:hover{
   background: black;
@@ -147,11 +169,18 @@ body{
 }
 .sec-3 div{
   width: 28%;
-  /* background: yellow; */
+  background: rgb(0, 0, 0);
   padding: 10px;
   text-align: center;
   margin: 0 10px;
+  border-radius: 20px 0 20px 0;
 }
 
 
+
+
+
+/* --------------------------------------- 
+                CONTACTS
+ ------------------------------------------ */
 

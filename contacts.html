@@ -4,13 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Contacts</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
-  <div>Contact me today for awesome deals</div>
-  <form action="">
-    <label for="name">Name</label>
-    <input type="text" name="name" placeholder="Enter Your Name">
+  <section class="contacts-sec-1">
+    <a href="./index.html"><p class="close-btn">&cross;</p></a>
+    <a href="./index.html">Home</a>
+  </section>
+  
+  <div class="contacts-hd">Contact me today for awesome deals</div>
+  <form action="" class="form-1">
+    <div>     
+      <label for="name">Name</label><br>
+      <input type="text" name="name" placeholder="Enter Your Name">
+    </div>
+    <div >
+      <label for="email">Email</label><br>
+      <input type="text" name="email" placeholder="Enter your email">
+    </div><br>
+    <div class="text-area">
+      <label for="textarea" >Additional details </label><br>
+      <textarea name="textarea" placeholder="Enter additional details" id="" cols="30" rows="8"></textarea>
+    </div>
+    <input type="submit"></input>
   </form>
   
 </body>
