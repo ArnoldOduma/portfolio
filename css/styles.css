@@ -341,6 +341,7 @@ footer div{
   padding: 40px 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 footer div p{
   width: 30%;
@@ -482,6 +483,9 @@ input::placeholder, textarea::placeholder{
     width: 100%;
   }
   .sec-4 div{
+    width: 100%;
+  }
+  footer div p{
     width: 100%;
   }
 
