@@ -13,13 +13,15 @@
 
 html{
   scroll-behavior: smooth;
+  
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.7s ease-in-out;
-  transition-delay: 0.1s;
+  transition: 0.6s ease-in-out;
+  transition-delay: 0.01s;
+  
 }
 a{
   text-decoration: none;
@@ -48,6 +50,28 @@ a:hover{
 li{
   list-style-type: none;
 }
+body{
+  /* background-image: url('../images/back-2.jpeg'); */
+  background-image: url('../images/back-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  transition: all 0.1s ease-in-out;
+  color: white;
+  font-family: 'Khand', sans-serif;
+  
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(231, 9, 83);
+  box-shadow: -10px 0 20px white;
+  border-radius: 30px;
+}
+
 
 /* --------------------------------------------
         PAGE LOADER
@@ -61,14 +85,16 @@ li{
   display: flex;
   justify-content: space-evenly;
   background: rgb(0, 0, 0);
-  animation: 1s ld-back 1;
+  animation: 1.3s ld-back 1;
   animation-delay: 0s;
   opacity: 0;
   z-index: 2;
 }
 @keyframes ld-back{
   0%{z-index: 20;opacity: 1;}
-  100%{z-index: 20;opacity: 1;}
+  50%{z-index: 20;opacity: 1;}
+  90%{z-index: 20;opacity: 1;}
+  100%{z-index: 20;opacity: 0.5;}
 }
 .loader div{
   position: absolute;
@@ -97,25 +123,12 @@ li{
 
 
 
-body{
-  /* background-image: url('../images/back-2.jpeg'); */
-  background-image: url('../images/back-1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
-  transition: all 1s ease-in-out;
-  color: white;
-  font-family: 'Khand', sans-serif;
-  
-  
-}
+
 .nav-bar{
   position: absolute;
-  top: 1%;
+  top: 1.3%;
   right: 5%;
   font-family: 'Krona One';
-  
 }
 .nav-bar ul li{
   display: inline-block;
@@ -131,7 +144,7 @@ body{
 }
 
 .sec-1{
-  padding-top: 25vh;
+  padding-top: 20vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -269,6 +282,7 @@ body{
   background-position: right;
   text-align: center;
   background-attachment: fixed;
+  padding: 30px 0;
 
 }
 .sec-5>p:nth-child(2){
@@ -300,10 +314,60 @@ body{
             FOOTER
 ----------------------------------------------- */
 footer{
-  height: 300px;
-  background: rgb(61, 57, 57);
+  background: #141522;
+  display: flex;
+  justify-content: space-evenly;
 }
-
+footer img{
+  width: 100%;
+  border-radius: 50%;
+}
+footer a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  border-radius: 50%;
+  cursor: pointer;
+}
+footer a:hover{
+  box-shadow: 0 0 10px white;
+  background: rgba(0, 0, 0, 0.466);
+}
+footer div{
+  width: 90%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer div p{
+  width: 30%;
+  text-align: center;
+}
+footer .top{
+  position: absolute;
+  padding: 12px 25px;
+  padding-top: 16px;
+  right: 20px;
+  margin-top: -25px;
+  font-size: 50px;
+  background: rgba(199, 1, 83, 0.685);
+  width: 40px;
+  line-height: 22px;
+  border-radius: 50%;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.top:hover{
+  background: rgb(231, 9, 83);
+  box-shadow: 0 0 10px white;
+}
+.top a, .top a:hover{
+  all: unset;
+}
 
 
 /* --------------------------------------- 
@@ -406,12 +470,7 @@ input::placeholder, textarea::placeholder{
   body{
     background-position: center;
   }
-  .nav-bar{
-    top: 5vh;
-  }
-  .sec-1{
-    margin-top: 20vh;
-  }
+ 
   .sec-1 div{
     padding: 10px;
   }
