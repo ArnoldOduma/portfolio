@@ -175,6 +175,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 100%;
 }
 .sec-1 div{
+  width: 70%;
   padding: 60px;
   text-align: center;
   font-family: 'Khand', sans-serif;
@@ -252,11 +253,15 @@ body::-webkit-scrollbar-thumb {
   padding: 30px 0;
 
 }
+.sec-2 div img{
+  width: 60px;
+  filter: drop-shadow(10px 10px 15px rgb(11, 11, 32));
+}
 .sec-2 div{
   width: 30%;
   min-width: 200px;
   background: rgba(0, 20, 85, 0.616);
-  padding: 30px 20px;
+  padding: 20px 20px;
   text-align: center;
   font-size: 20px;
   line-height: 23px;
@@ -265,14 +270,13 @@ body::-webkit-scrollbar-thumb {
 .sec-2 div p{
   text-transform: uppercase;
   font-weight: 900;
-  border: 2px solid white;
+  border: 0.5px solid white;
   padding: 5px 2px 3px 2px;
   margin: 5px 0;
-  border-radius: 15px 0 15px 0;
 }
 .sec-2 ol li:nth-child(1), .sec-2 ol li:nth-child(3){
   color: #ffd000;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 10px;
   text-decoration: underline;
   letter-spacing:3px;
@@ -307,7 +311,7 @@ body::-webkit-scrollbar-thumb {
   background-color:  #141522;
   margin-top: -56%;
   width: 100%;
-  padding: 9%;
+  padding: 5%;
   opacity: 0;
 }
 .sec-3 div:hover .overlay{
@@ -322,7 +326,7 @@ body::-webkit-scrollbar-thumb {
   text-decoration: underline;
 }
 .overlay a{
-  padding: 10px 20px;
+  padding: 7px 20px;
   border: 2px solid white;
   display: inline-block;
 }
@@ -537,7 +541,7 @@ input::placeholder, textarea::placeholder{
     width: 45%;
   }
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 541px){
   body{
     background-position: center;
   }
@@ -546,11 +550,31 @@ input::placeholder, textarea::placeholder{
   }
  
   .sec-1 div{
+    width: 100%;
     padding: 10px;
   }
-  .sec-2 div, .sec-3 div{
-    width: 95%;
+  .scroll-bar{
+    display: none;
+  }
+  .sec-2{
+    background: #141522;
+  }
+  .sec-2 div{
+    width: 100%;
     margin: 2px 0;
+  }
+  .sec-2 div{
+    border-radius: 0px;
+    background: none;
+  }
+  .sec-3 div{
+    width: 70%;
+    margin: 10px 0 0 0;
+    min-height: 140px;
+  }
+  .sec-3 .overlay{
+    font-size: 0.7em;
+    border: 5px solid #141522;
   }
   .form-1 div{
     width: 100%;
