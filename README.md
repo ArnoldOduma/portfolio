@@ -1,7 +1,7 @@
 # {Arnold Oduma's Portfolio}
 #### {This application is basically a portfolio about my contact information, details on previous projects and my likes hobbies and interests }
 #### By **{Arnold Oduma}**
-<img src=' https://arnoldoduma.github.io/portfolio/images/png%20(1).png '  width="80">
+<img src="./images/png%20(1).png "  styles="float:left; width:80;">
 
 ## Description
 My portfolio contains normal website language that is html and css. It details the various section having in it a number of cool transitions which are pleasing for the eye. The page has a relatively good ranking i=on google chromes audit boasting a {93% Accessibility} {93% Best practices} {90% SEO} {70% Performance}.
