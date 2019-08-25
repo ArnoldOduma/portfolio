@@ -99,10 +99,10 @@ body::-webkit-scrollbar-thumb {
 .loader div{
   position: absolute;
   top: 30%;
-  width: 30vh;
-  height: 30vh;
+  width: 20vh;
+  height: 20vh;
   transition: 0.0001s;
-  animation: 2s load 1;
+  animation: 2s load infinite;
   animation-delay: 0s;
   opacity: 0;
   border-radius: 50%;
@@ -112,27 +112,28 @@ body::-webkit-scrollbar-thumb {
   0%{ 
     z-index: 20; 
     opacity: 1;
-    border-top: 5px solid rgb(0, 92, 167);
+    border-top: 2px solid rgb(0, 92, 167);
   }
   30%{
     z-index: 20; 
     opacity: 1;
-    border-right: 5px solid rgb(192, 0, 160);
+    border-right: 2px solid rgb(192, 0, 160);
   }
   60%{
     z-index: 20; 
     opacity: 1;
-    border-bottom: 5px solid rgb(231, 9, 83);
+    border-bottom: 2px solid rgb(0, 119, 255);
   }
   80%{
     z-index: 20;
     opacity: 1;
-    border-left: 5px solid rgba(255, 251, 0, 0.767);
+    border-left: 2px solid rgba(247, 0, 255, 0.767);
   }
   100%{
     z-index: 20;
     opacity: 1;
-    border: none;transform: rotate(360deg)
+    border-left: 2px solid rgba(247, 0, 255, 0.767);
+    transform: rotate(360deg)
   }
   
 }
@@ -210,7 +211,7 @@ body::-webkit-scrollbar-thumb {
   right: -10px;
   transform: rotate(90deg);
   letter-spacing: 5px;
-  animation: 0.5s scroll-me infinite;
+  animation: 5s scroll-me infinite;
   border-radius: 30px;
   cursor: pointer;
 
@@ -253,8 +254,9 @@ body::-webkit-scrollbar-thumb {
   padding: 30px 0;
 
 }
-.sec-2 div img{
+.sec-2 div i{
   width: 60px;
+  font-size: 60px;
   filter: drop-shadow(10px 10px 15px rgb(11, 11, 32));
 }
 .sec-2 div{
@@ -282,6 +284,30 @@ body::-webkit-scrollbar-thumb {
   letter-spacing:3px;
   font-weight: 300;
 }
+
+
+.icons{
+  border-radius: none;
+  width: 100%;
+  min-height: 100px;
+  background: rgba(138, 138, 138, 0.589);
+  padding: 20px 0;
+  text-align: center;
+  transition: 2s ease-in;
+}
+.icons i{
+  font-size: 70px;
+  padding: 10px 5px;
+  margin: 2px 0;
+  display: inline-block;
+  width: 150px;
+  background: rgba(0, 5, 53, 0.233);
+  border-radius: 10px;
+}
+
+
+
+
 .sec-3{
   display: flex;
   flex-wrap: wrap;
@@ -290,15 +316,15 @@ body::-webkit-scrollbar-thumb {
 }
 .sec-3 img{
   display: inline-block;
-  border-radius: 20px;
 }
 .sec-3 div{
   width: 30%;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 1s ease-in-out;
   overflow: hidden;
+  margin: 5px 0;
 }
 .sec-3 a{
   display: block;
@@ -309,9 +335,10 @@ body::-webkit-scrollbar-thumb {
 .sec-3 .overlay{
   position: relative;
   background-color:  #141522;
-  margin-top: -56%;
+  height: 100%;
+  margin-top: -60%;
   width: 100%;
-  padding: 5%;
+  padding: 8%;
   opacity: 0;
 }
 .sec-3 div:hover .overlay{
@@ -333,6 +360,9 @@ body::-webkit-scrollbar-thumb {
 .overlay a:hover{
   background: rgba(0, 0, 0, 0.993);
 }
+
+
+
 /* -----------------------------------------
             4th section
 -----------------------------------------*/
@@ -346,6 +376,12 @@ body::-webkit-scrollbar-thumb {
 .sec-4 div{
   width: 50%;
   min-width: 300px;
+}
+.sec-4 .h-3{
+  font-size: 30px;
+}
+.sec-4 p{
+  font-size: 20px;
 }
 /* ------------------------------------------------
           5TH SECTION --> TESTIMONIALS
@@ -384,6 +420,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 100;
   text-decoration: underline;
 }
+
 /* -----------------------------------------------
             FOOTER
 ----------------------------------------------- */
@@ -396,19 +433,22 @@ footer img{
   width: 100%;
   border-radius: 50%;
 }
-footer a{
+.footer-icons{
+  font-size: 30px;
+  transition: 0.1s ease-in-out;
+}
+.footer-icons a{
   display: inline-block;
   width: 35px;
   height: 35px;
-  padding: 0px;
+  padding: 0 5px;
   border: none;
-  transition: 0.2s ease-in-out;
-  border-radius: 50%;
+  background: none;
   cursor: pointer;
 }
-footer a:hover{
-  box-shadow: 0 0 10px white;
-  background: rgba(0, 0, 0, 0.466);
+.footer-icons a:hover i{
+  text-shadow: 0 0 10px white;
+  transition: 0.1s ease-in-out;
 }
 footer div{
   width: 90%;
@@ -421,6 +461,7 @@ footer div p{
   width: 30%;
   text-align: center;
 }
+
 footer .top{
   position: absolute;
   padding: 12px 25px;
@@ -443,6 +484,7 @@ footer .top{
 .top a, .top a:hover{
   all: unset;
 }
+
 
 
 /* --------------------------------------- 
@@ -469,7 +511,7 @@ footer .top{
 .contacts-hd{
   margin-top: 10px; 
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   padding: 20px;
   font-family: 'Black-ops';
 }
@@ -581,6 +623,9 @@ input::placeholder, textarea::placeholder{
   }
   .sec-4 div{
     width: 100%;
+  }
+  .contacts-hd{
+    font-size: 5vw;
   }
   footer div p{
     width: 100%;
